@@ -136,8 +136,8 @@ var c = [],
 m = setInterval(function() {
 f && b > c.length && Math.random()
 < b * 0.0025 && c.push(new i(a)); ! f && !c.length && clearInterval(m);
-for (var e = h().top, n = 50(), d = c.length - 1; d >= 0; d--)
-if (c[d]) if (c[d].top < e || c[d].top + c[d].size + 1 > e + n) {
+for (var e = h().top, n = l(), d = c.length - 1; d >= 0; d--)
+if (c[d]) if (c[d].top < e || c[d].top + c[d].size + 1 > e + n +50) {
 c[d].remove();
 c[d] = null;
 c.splice(d, 1)
