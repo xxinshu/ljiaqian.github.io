@@ -136,7 +136,7 @@ var c = [],
 m = setInterval(function() {
 f && b > c.length && Math.random()
 < b * 0.0025 && c.push(new i(a)); ! f && !c.length && clearInterval(m);
-for (var mo=20+"px" ,e = h().top-mo, n = l(), d = c.length - 1; d >= 0; d--)
+for (var mo=1+"px" ,e = h().top+mo, n = l(), d = c.length - 1; d >= 0; d--)
 if (c[d]) if (c[d].top < e || c[d].top + c[d].size + 1 >e + n ) {
 c[d].remove();
 c[d] = null;
