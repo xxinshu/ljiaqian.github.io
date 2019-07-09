@@ -114,8 +114,9 @@ this.createEl(this.parent, a);
 this.size = Math.random() * 5 + 15;
 this.el.style.width = Math.round(this.size) + "px";
 this.el.style.height = Math.round(this.size) + "px";
-this.maxLeft = document.body.offsetWidth - this.size-50;
-this.maxTop = document.body.offsetHeight - this.size-50;
+	this.move=50+"px";
+this.maxLeft = document.body.offsetWidth - this.size-this.move;
+this.maxTop = document.body.offsetHeight - this.size-this.move;
 this.left = Math.random() * this.maxLeft;
 this.top = h().top + 1;
 this.angle = 1.4 + 0.2 * Math.random();
@@ -173,8 +174,8 @@ this.angleDelta = -this.angleDelta;
 this.angle += this.angleDelta;
 this.left += this.speed * Math.cos(this.angle * Math.PI);
 this.top -= this.speed * Math.sin(this.angle * Math.PI);
-if (this.left < 0) this.left = this.maxLeft;
-else if (this.left > this.maxLeft) this.left = 0
+if (this.left < 50) this.left = this.maxLeft;
+else if (this.left > this.maxLeft) this.left = 50
 },
 draw: function() {
 this.el.style.top = Math.round(this.top) + "px";
