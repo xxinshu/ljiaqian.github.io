@@ -292,7 +292,13 @@ createSnow("", 40);
         {{ post.excerpt }}
       </div>
 	    
-	    <div>
+	    
+
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Data</a>
+    </article>
+  {% endfor %}
+</div>
+<div>
 		    <h1>防</h1>
 		    <h1>B</h1>
 		    <h1>U</h1>
@@ -309,10 +315,5 @@ createSnow("", 40);
 	    
 	    
 	    </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Data</a>
-    </article>
-  {% endfor %}
-</div>
 
 
